@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
+
+    <style>
+        input{
+            margin: 7px 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>My Bio Data</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">FirstName:</label>
+            <input type="text" id="fname" placeholder="First Name" name="fname">
+            <label for="lname">LastName:</label>
+            <input type="text" id="lname" placeholder="Last Name" name="lname">
+            <br>
+
+            <label for="male">Male: </label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Female: </label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="male">Other: </label>
+            <input type="radio" name="gender" value="other" id="other">
+            <br>
+
+            <label for="fdate">Date of Birth : </label>
+            <input type="date" id="fdate" name="fdate">
+            <br>
+
+            <label for="femail">E-Mail : </label>
+            <input type="email" id="femail" placeholder="Enter your Email" name="femail">
+            <br>
+
+            <label for="fphone">Phone :</label>
+            <input type="tel" id="fphone" name="fphone" placeholder="+91">
+            <br>
+
+            <label for="faddress">Address :</label>
+            <textarea id="faddress" name="faddress" rows="4" cols="25" placeholder="Input your Address"></textarea>
+            <br>
+
+            <label for="fheight">Height :</label>
+            <input type="text" id="fheight" placeholder="Height in feet" name="fheight">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="fschool">School Name :</label>
+            <input type="text" id="fschool" name="fschool" placeholder="School Name">
+            <br>
+
+            <label for="fclass">Class :</label>
+            <input type="text" id="fclass" name="fclass" placeholder="Enter Class">
+            <br>
+
+            <label for="fstream">Stream :</label>
+            <select id="fstream" name="fstream">
+                <option value="Medical">Medical</option>
+                <option value="Non-Medical">Non-Medical</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Humanities">Humanities</option>
+            </select>
+            <br>
+
+            <label for="fsheet">Marksheet :</label>
+            <input type="file" name="fsheet" id="fsheet">
+        </fieldset>
+
+        <input type="submit">
+    </form>
 </body>
 </html>
